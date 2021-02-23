@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import {fetchTrendingMovies} from '../../Services/MovieApi';
 
 export default class HomePage extends Component {
@@ -30,7 +31,7 @@ export default class HomePage extends Component {
                 {movies.length > 0 && (
                     <ul>
                         {movies.map(el => (
-                            <li>{el.title}</li>
+                            <Link to = {`/MoviesPage/${el.id}`}><li>{el.title}</li></Link>
                         ))}
                     </ul>
                 )}

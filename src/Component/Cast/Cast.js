@@ -4,7 +4,6 @@ import {fetchCastDetails} from '../../Services/MovieApi'
 const imgUrl = 'https://image.tmdb.org/t/p/original/'
 
 export default class Cast extends Component {
-
   state = {
     reviews: []
   }
@@ -35,5 +34,4 @@ export default class Cast extends Component {
       </div>
     )
   }
-
 }

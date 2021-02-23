@@ -11,7 +11,8 @@ export default class MovieDetailsPage extends Component {
 
   state = {
     items: {},
-    url: {}
+    url: '',
+    id: ''
   }
   
   // запрос на api для получения инфы о ФИЛЬМЕ

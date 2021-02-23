@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default class ItemNav extends Component {
 
@@ -20,4 +21,9 @@ export default class ItemNav extends Component {
         )
     }
     
+}
+
+ItemNav.propTypes = {
+    url: PropTypes.string,
+    id: PropTypes.string,
 }
